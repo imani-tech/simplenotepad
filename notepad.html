@@ -21,12 +21,10 @@
     <script>
         const section = document.getElementById("section")
        section.innerHTML = localStorage.getItem("savedText");
-
-// save whenever user types
+       
+// saves whenever user types 
 section.addEventListener("input", () => {
-
     localStorage.setItem("savedText", section.innerHTML);
-
 });
     </script>
 </body>
