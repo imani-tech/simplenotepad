@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <style>
+        body{
+            margin: 0
+        }
+        section{
+           width:100vw;
+           height:100vh;
+           background-color:#363636;
+           color:white; 
+        }
+    </style>
+    <section contenteditable="true" id="section"></section>
+    <script>
+        const section = document.getElementById("section")
+       section.innerHTML = localStorage.getItem("savedText");
+
+// save whenever user types
+section.addEventListener("input", () => {
+
+    localStorage.setItem("savedText", section.innerHTML);
+
+});
+    </script>
+</body>
+</html>
