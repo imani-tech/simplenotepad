@@ -38,8 +38,13 @@ textarea::placeholder{
 .saved-text{
     /* color: rgb(78, 62, 169);
     background-color: rgb(245, 232, 220); */
-     background: rgb(252, 192, 202);
+     
   color: rgb(120, 70, 80);
    font-size: 15px;
    font-family: "Emilys Candy", serif;     
+   padding: 10px;
+}
+.div{
+    height: 30px;
+    background: rgb(252, 192, 202);
 }
