@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 248, 245);
+}
+h1{
+    text-align: center;
+    color: rgb(252, 192, 202);
+    font-family: "Chewy", system-ui;
+}
+.top-buttons{
+    display: flex;
+    gap:250px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+button{
+    padding: 15px;
+   font-size: 15px;
+   border-radius: 10px;
+  border: none;  
+  background-color: rgb(220, 208, 255);
+  color: rgb(90, 70, 75);  
+  padding-left: 30px;
+  padding-right: 30px;
+}
+textarea{
+    width: 90%;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 1.5px solid rgb(252, 192, 202);
+}
+textarea::placeholder{
+    color: rgb(78, 62, 169);
+    font-size: 15px;
+   font-family: "Emilys Candy", serif;
+}
+.saved-text{
+    /* color: rgb(78, 62, 169);
+    background-color: rgb(245, 232, 220); */
+     background: rgb(252, 192, 202);
+  color: rgb(120, 70, 80);
+   font-size: 15px;
+   font-family: "Emilys Candy", serif;     
+}

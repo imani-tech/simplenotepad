@@ -2,30 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Emilys+Candy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Note Pad</title>
 </head>
-<body >
-    <style>
-        body{
-            margin: 0
-        }
-        section{
-           width:100vw;
-           height:100vh;
-           background-color:#363636;
-           color:white; 
-        }
-    </style>
-    <section contenteditable="true" id="section"></section>
-    <script>
-        const section = document.getElementById("section")
-       section.innerHTML = localStorage.getItem("savedText");
-       
-// saves whenever user types 
-section.addEventListener("input", () => {
-    localStorage.setItem("savedText", section.innerHTML);
-});
-    </script>
+<body>
+    <section class="body">
+        <h1>My lovely Note Pad</h1>
+        <header class="top-buttons">
+            <button type="button" id="">New</button>
+            <button type="submit">Save</button>
+            <button type="button">Clear</button>
+        </header>
+<textarea title="notes" placeholder="what's on your mind sweetheart...❣️ "></textarea>
+    </section>
+<section id="display-notes">
+
+</section>
+    <script src="script.js"></script>
 </body>
 </html>
