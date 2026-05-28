@@ -1,6 +1,9 @@
 body{
     background-color: rgb(255, 248, 245);
 }
+#display-notes{
+    margin-top: 50px;
+}
 h1{
     text-align: center;
     color: rgb(252, 192, 202);
@@ -12,16 +15,18 @@ h1{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    
 }
 button{
     padding: 15px;
-   font-size: 15px;
-   border-radius: 10px;
-  border: none;  
-  background-color: rgb(220, 208, 255);
-  color: rgb(90, 70, 75);  
-  padding-left: 30px;
-  padding-right: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;  
+    background-color: rgb(220, 208, 255);
+    color: rgb(90, 70, 75);  
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
 }
 textarea{
     width: 90%;
@@ -33,18 +38,29 @@ textarea{
 textarea::placeholder{
     color: rgb(78, 62, 169);
     font-size: 15px;
-   font-family: "Emilys Candy", serif;
+    font-family: "Emilys Candy", serif;
 }
-.saved-text{
-    /* color: rgb(78, 62, 169);
-    background-color: rgb(245, 232, 220); */
-     
-  color: rgb(120, 70, 80);
-   font-size: 20px;
-   font-family: "Emilys Candy", serif;     
-   padding: 10px;
+.saved-text{   
+    color: rgb(120, 70, 80);
+    font-size: 25px;
+    font-family: "Emilys Candy", serif;     
+    padding: 10px;
+     margin: 0;
 }
-.div{
+.div{    
     height: 35px;
     background: rgb(252, 192, 202);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 30px;
+      padding: 10px 15px;
+}
+.delete{
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: none;     
 }

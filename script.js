@@ -18,9 +18,7 @@ saveBtn.addEventListener("click", (event)=>{
     // gave the div a class so it can look beautiful 💞
     div.classList.add("div")
     //  gave the p a class so it can look beautiful 😍
-    p.classList.add("saved-text")
-    // working on delete btn ⏱️
-    const delete_btn = document.createElement("button")
+    p.classList.add("saved-text")    
     // made the note visible on the body👁️   
     displayNotes.appendChild(div)
     // after saving the textarea will be empty🫥 
@@ -29,7 +27,15 @@ saveBtn.addEventListener("click", (event)=>{
     if(p.textContent === ""){
        displayNotes.removeChild(div) 
     }
-
+// working on delete btn ⏱️
+    const delete_btn = document.createElement("button")
+    delete_btn.textContent = "Delete"
+    delete_btn.addEventListener("click",() => {
+       displayNotes.removeChild(div) 
+    })
+    // deletes the selected div
+    delete_btn.classList.add("delete")
+div.append(delete_btn)
 })
 // event listener for clear btn
 clearBtn.addEventListener("click", () => {
@@ -39,3 +45,4 @@ clearBtn.addEventListener("click", () => {
 newBtn.addEventListener("click", ()=>{
      textarea.value = ""
 })
+
