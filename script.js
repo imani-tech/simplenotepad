@@ -13,5 +13,16 @@ saveBtn.addEventListener("click", (event)=>{
     div.append(p)
     div.classList.add("div")
     p.classList.add("saved-text")
+    const delete_btn = document.createElement("button")   
     displayNotes.appendChild(div)
+    textarea.value = ""
+    if(p.textContent === ""){
+       displayNotes.removeChild(div) 
+    }
+})
+clearBtn.addEventListener("click", () => {
+    displayNotes.innerHTML = ""
+})
+newBtn.addEventListener("click", ()=>{
+     textarea.value = ""
 })

@@ -40,11 +40,11 @@ textarea::placeholder{
     background-color: rgb(245, 232, 220); */
      
   color: rgb(120, 70, 80);
-   font-size: 15px;
+   font-size: 20px;
    font-family: "Emilys Candy", serif;     
    padding: 10px;
 }
 .div{
-    height: 30px;
+    height: 35px;
     background: rgb(252, 192, 202);
 }
